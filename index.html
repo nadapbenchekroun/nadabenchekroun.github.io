@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Luxe </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header  -->
+    <header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>KEDGE</span> TRAVEL AGENCY</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="login_btn">LOGIN</button>
+    </header>
+    <!-- section Acceuil -->
+     
+    <section id="home">
+        <div class="left">
+            <h1>TRAVEL <span>WITH</span> CONFIDENCE</h1>
+            <p>KEGDE TRAVEL AGENCY provides businesses and individuals with an unrivalled, personal service in travel management. We navigate our way around complexity to offer maximum value and ultimate peace of mind</p>
+            <a href="#">BOOK NOW</a>
+        </div>
+        <div class="right">
+            <img src="img1.png">
+        </div>
+    </section>
+
+
+
+
+    <!-- section vehicule -->
+
+    <section id="destinations">
+        <h1 class="section_title">Our destinations</h1>
+        <div class="images">
+            <ul>
+                <li class="">
+                   <div>
+                       <img src="sydney.jpeg" alt="">
+                   </div>
+                   <span>SYDNEY</span>
+                   <span class="prix">2600$</span>
+                   <a href="#">BOOK NOW</a>
+                </li>
+                <li class="destinations">
+                    <div>
+                        <img src="hongkong.jpeg" alt="">
+                    </div>
+                    <span>HONG KONG</span>
+                    <span class="prix">2354$</span>
+                    <a href="#">BOOK NOW</a>
+                 </li>
+                 <li class="destinations">
+                    <div>
+                        <img src="newyork.jpeg" alt="">
+                    </div>
+                    <span>NEW YORK</span>
+                    <span class="prix">1287$</span>
+                    <a href="#">BOOK NOW</a>
+                 </li>
+                 <li class="destinations">
+                    <div>
+                        <img src="dubai.jpeg" alt="">
+                    </div>
+                    <span>DUBAI </span>
+                    <span class="prix">1154$</span>
+                    <a href="#">BOOK NOW</a>
+                 </li>
+                 <li class="destinations">
+                    <div>
+                        <img src="losangeles.jpeg" alt="">
+                    </div>
+                    <span>LOS ANGELES</span>
+                    <span class="prix">1577$</span>
+                    <a href="#">BOOK NOW</a>
+                 </li>
+                 <li class="destinations">
+                    <div>
+                        <img src="rio.jpeg" alt="">
+                    </div>
+                    <span>RIO DE JANEIRO</span>
+                    <span class="prix">1340$</span>
+                    <a href="#">BOOK NOW</a>
+                 </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section services -->
+
+    <section id="services">
+        <h1 class="section_title">Our Services</h1>
+        <div class="list_services">
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Flights</h3>
+                <p>From searching for the best value for money, all the way through to loyalty point redemption and management, KEDGE TRAVEL AGENCY makes use of both the latest technology and privileged...</p>
+                 <a href="#" class="read_more">Read more</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Hotels</h3>
+                <p>For more than 30 years, we have worked hard to build a portfolio of reliable contacts at a wide array of global hotels, allowing us to book our travellers at the most advantageous...</p>
+                 <a href="#" class="read_more">Read more</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Car rental</h3>
+                <p>KEDGE TRAVEL AGENCY has helped hundreds of satisfied clients rent the car they need at the most competitive prices. Through long-standing relationships with reliable partners...</p>
+                 <a href="#" class="read_more">LRead more</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- section contact -->
+
+    <section id="contact">
+        <h1 class="section_title">CONTACT US </h1>
+        <div class="localisation_contact_div">
+            <div class="localisation">
+                <h3>OUR ADDRESS</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10499.966567606692!2d2.285747998068967!3d48.85836977022069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1644955637071!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="form_contact">
+                <h3>Send a message</h3>
+                <form action="#">
+                    <input type="text"placeholder="NAME">
+                    <input type="email"placeholder="EMAIL">
+                    <input type="text"placeholder="TITLE">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+
+    
+
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
+</html>
